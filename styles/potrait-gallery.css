@@ -1,0 +1,124 @@
+.section {
+    text-align: center;
+}
+
+.Portsection__heading {
+    font-size: var(--size-6xl);
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.PortgridSection {
+    display: grid;
+    gap: var(--size-2xl);
+    grid-template-columns: repeat(4,1fr);
+}
+
+.PortgridSection__img {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.PortgridSection__img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .section {
+    text-align: center;
+}
+
+.section__heading {
+    font-size: var(--size-6xl);
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.PortgridSection {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.PortgridSection__img {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.PortgridSection__img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (max-width: 768px ) {
+    .Portsection__heading {
+        font-size: var(--size-4xl);
+    }
+    
+    .PortgridSection {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .Portsection__heading {
+        font-size: var(--size-5xl);
+    }
+    
+    .PortgridSection {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+}
+
+/* md */
+@media (max-width: 768px ) {
+    .Portsection__heading {
+        font-size: var(--size-4xl) !important;
+    }
+    
+    .PortgridSection {
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .Portsection__heading {
+        font-size: var(--size-5xl);
+    }
+    
+    .PortgridSection {
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

@@ -1,0 +1,126 @@
+.contact__heading {
+    text-align: center;
+    font-size: var(--size-6xl);
+    letter-spacing: 2px;
+}
+
+.contact__content {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.content__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formTop {
+    display: flex;
+    gap: 2rem;
+}
+
+.form__topLeft, .form__topRight {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: 1px solid grey;
+    outline: none;
+    margin-top: var(--size-xs);
+    margin-bottom: var(--size-xs);
+    color: white;
+    padding-left: var(--size-xxs);
+}
+
+input {
+    height: var(--size-4xl);
+}
+
+input:focus, textarea:focus {
+    border: 1px solid var(--clr-focus);
+}
+
+textarea {
+    resize: none;
+    padding-top: var(--size-xxs);
+}
+
+.form__btn {
+    background-color: var(--clr-focus);
+    color: white;
+    border: none;
+}
+
+.form__btn {
+    height: var(--size-4xl);
+}
+
+.form__btn:hover {
+    background-color: var(--clr-focus-dark);
+}
+
+.info__heading {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info__para {
+    color: var(--clr-text);
+    width: 25ch;
+}
+
+.info__email, .info__number {
+    color: var(--clr-focus);
+}
+
+
+
+::selection {
+    background-color: none;
+}
+
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (max-width: 966px) {
+    .contact__content {
+        flex-direction: column !important;
+        margin: var(--size-5xl) 0;
+    }
+    .contact__heading {
+        font-size: var(--size-4xl) !important;
+    }
+}
+
+/* lg */
+@media (max-width: 1070px) {
+    .contact__content {
+        gap: 3rem;
+    }
+    .contact__heading {
+        font-size: var(--size-5xl);
+    }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
